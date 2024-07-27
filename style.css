@@ -1,0 +1,32 @@
+body {
+  background: rgb(21, 20, 38);
+  background: linear-gradient(
+    0deg,
+    rgba(21, 20, 38, 1) 0%,
+    rgba(13, 13, 136, 1) 64%,
+    rgba(28, 100, 115, 1) 100%
+  );
+}
+
+#animacia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#doodle-sprite {
+  background-image: url(photo/doodle-sprite.png);
+  height: 509px;
+  width: calc(2000px / 10);
+  animation: doodle 1.5s steps(10, end) infinite;
+}
+
+@keyframes doodle {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -2000px 0;
+  }
+}
